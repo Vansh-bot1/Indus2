@@ -4,7 +4,7 @@ from email.message import EmailMessage
 app=Flask(__name__)
 @app.route('/')
 def hello():
-	return 'Anne is Great!! jk jk'
+	return 'Just For Testing'
 
 @app.route('/fun/<string:name>/<string:email>')	
 def fun(name,email):
