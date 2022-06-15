@@ -16,7 +16,8 @@ def fun(name,email):
 	with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
 		smtp.login('v.r.goel2004@gmail.com','qfutofqohvbddyxe')
 		smtp.send_message(msg)
-	return 'Check your Inbox'
+	result={"message":"email has been sent"}	
+	return jsonify(result)
 
 if __name__=='__main__':
 	app.run(debug=True)
